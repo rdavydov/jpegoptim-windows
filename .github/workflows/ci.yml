@@ -20,8 +20,8 @@ jobs:
           # We need to get all git revisions for `git describe` to work
           fetch-depth: 0
 
-      - name: Add MSBuild to PATH
-        uses: microsoft/setup-msbuild@v1.1
+      - name: Add MSVC to PATH
+        uses: ilammy/msvc-dev-cmd@v1
 
       # TODO: cache this?
       - name: Set up nasm
